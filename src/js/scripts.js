@@ -1,9 +1,4 @@
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-/// business logic
+// business logic
 
 function getRomanQuantities(num) {
   var remainingValue = num;
@@ -19,7 +14,7 @@ function getRomanQuantities(num) {
   });
 
   return values;
-}
+};
 
 // function romanConverter(number) {
 //   var romanLetters = ["M", "D", "C", "L", "X", "V", "I"];
@@ -28,7 +23,7 @@ function getRomanQuantities(num) {
 //   return romanLetters[index];
 // }
 
-export function romanDisplay(values) {
+function romanDisplay(values) {
   var romanLetters = ["M", "D", "C", "L", "X", "V", "I"];
   var romanVals = getRomanQuantities(values);
   var result = "";
@@ -38,7 +33,7 @@ export function romanDisplay(values) {
     }
   });
   return result;
-}
+};
 
 
 // user interface
